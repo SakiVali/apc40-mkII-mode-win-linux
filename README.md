@@ -1,8 +1,8 @@
-# apc40-mode-win-linux
+# apc40-mkii-mode-win-linux
 
 ## General Info
 
-* Author: Semyon Proshev
+* Author: Semyon Proshev (Updated for the MKII and ported to windows executable by SakiVali)
 * License: [GNU General Public License, Version 3](http://www.gnu.org/licenses/gpl.txt)
 
 ## Description
