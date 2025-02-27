@@ -1,7 +1,9 @@
 /*
  * apc40-mode-win-linux
  *
- * Copyright (c) 2014 Semyon Proshev
+ * Copyright (c) 2014 Semyon Proshev\
+ *
+ * Modified 2024 SakiVali
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -97,7 +99,7 @@ public class Main extends Application {
         if (midiOutputDevice != null) {
             midiOutputDevice.open();
             Receiver midiOutputReceiver = midiOutputDevice.getReceiver();
-            byte[] message = {(byte) 0xf0, 0x47, 0x00, 0x73, 0x60, 0x00, 0x04, mode.getByte(), 0x08, 0x04, 0x01, (byte) 0xf7};
+            byte[] message = {(byte) 0xf0, 0x47, (byte)0x7f, 0x29, 0x60, 0x00, 0x04, mode.getByte(), 0x09, 0x07, 0x01, (byte) 0xf7};
             SysexMessage sysexMessage = new SysexMessage(message, message.length);
             midiOutputReceiver.send(sysexMessage, -1);
             midiOutputReceiver.close();
