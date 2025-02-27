@@ -7,7 +7,7 @@
 
 ## Description
 
-Graphic tool to change firmware mode of Akai APC40. You can read about modes at <http://www.akaipro.com/apc40map>.
+Graphic tool to change firmware mode of Akai APC40 mkII.
 
 ## Requirements
 
